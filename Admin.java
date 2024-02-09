@@ -1,4 +1,3 @@
-package MealPayProject;
 import java.util.*;
 
 public class Admin {

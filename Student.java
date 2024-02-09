@@ -1,4 +1,3 @@
-package MealPayProject;
 public class Student {
     private String name;
     private int balance;
