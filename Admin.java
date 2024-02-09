@@ -13,8 +13,8 @@ public class Admin {
         spreadsheet.add(myStudent.getID(), myStudent);
     }
 
-    public Student getStudent(int myID){
-        return spreadsheet.get(myID);
+    public void getStudent(int myID){
+        System.out.println(spreadsheet.get(myID));
     }
 
     public void printSpreadsheet(){
@@ -22,7 +22,7 @@ public class Admin {
     }
 
     public void printNegativeBalances(){
-        for(int i = 0; i > spreadsheet.size(); i++){
+        for(int i = 0; i < spreadsheet.size(); i++){
             if(spreadsheet.get(i).getBalance() < 0){
                 System.out.print(spreadsheet.get(i));
                 System.out.println();
@@ -31,12 +31,12 @@ public class Admin {
     }
 
     //Transactions
-    public void addFundsToSpreadsheet(int myID, int myAmount){
-        spreadsheet.get(myID).addFunds(myAmount);
+    public void addFunds(int myID, int myAmount){
+        spreadsheet.get(myID).addFundsStudent(myAmount);
     }
 
-    public void buyLunchForSpreadsheet(int myID){
-        spreadsheet.get(myID).buyLunch();
+    public void buyLunch(int myID){
+        spreadsheet.get(myID).buyLunchStudent();
     }
 
 }

@@ -22,14 +22,14 @@ public class Student {
     }
 
     public String toString(){
-        return "Name: " + name + ",ID: " + ID + ",Balance: " + balance;
+        return "Name: " + name + ", ID: " + ID + ", Balance: " + balance;
     }
 
-    public void addFunds(int amount){
+    public void addFundsStudent(int amount){
         balance += amount;
     }
 
-    public void buyLunch(){
+    public void buyLunchStudent(){
         balance -= 7;
     }
 }
