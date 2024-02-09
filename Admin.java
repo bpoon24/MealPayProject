@@ -1,3 +1,6 @@
+package MealPayProject;
+import java.util.*;
+
 public class Admin {
     public static ArrayList<Student> spreadsheet;
 
@@ -10,7 +13,7 @@ public class Admin {
     }
 
     public Student getStudent(int myID){
-        return spreadsheet[myID];
+        return spreadsheet.get(myID);
     }
 
     public void printSpreadsheet(){
@@ -19,8 +22,8 @@ public class Admin {
 
     public void printNegativeBalances(){
         for(int i = 0; i > spreadsheet.size(); i++){
-            if(spreadsheet[i].getBalance < 0){
-                System.out.print(spreadsheet[i]);
+            if(spreadsheet.get(i).getBalance() < 0){
+                System.out.print(spreadsheet.get(i));
                 System.out.println();
             }
         }
