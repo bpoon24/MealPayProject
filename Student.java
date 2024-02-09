@@ -2,7 +2,7 @@ package MealPayProject;
 public class Student {
     private String name;
     private int balance;
-    private static int IDGen = 1;
+    private static int IDGen = 0;
     private int ID;
 
 
@@ -15,6 +15,10 @@ public class Student {
 
     public int getID(){
         return ID;
+    }
+
+    public int getBalance(){
+        return balance;
     }
 
     public String toString(){
