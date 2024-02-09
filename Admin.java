@@ -8,6 +8,7 @@ public class Admin {
         spreadsheet = new ArrayList<Student>();
     }
 
+    //General info
     public void addStudent(Student myStudent){
         spreadsheet.add(myStudent.getID(), myStudent);
     }
@@ -29,5 +30,13 @@ public class Admin {
         }
     }
 
+    //Transactions
+    public void addFundsToSpreadsheet(int myID, int myAmount){
+        spreadsheet.get(myID).addFunds(myAmount);
+    }
+
+    public void buyLunchForSpreadsheet(int myID){
+        spreadsheet.get(myID).buyLunch();
+    }
 
 }
